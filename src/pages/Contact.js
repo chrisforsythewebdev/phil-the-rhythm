@@ -207,7 +207,7 @@ export default function Contact() {
             <div className="bg-white rounded-3xl p-6 shadow-sm border border-rhythm-100">
               <h3 className="font-display text-2xl text-ink mb-3">📍 Area Covered</h3>
               <p className="font-body text-ink/60 text-sm leading-relaxed">
-                Phil is based in [Your Town] and covers [area / radius] — including [example areas].
+                Phil is based in [Your Town] and covers [area / radius] - including [example areas].
                 Travel beyond this may incur a small supplement.
               </p>
             </div>

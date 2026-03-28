@@ -53,7 +53,7 @@ const packages = [
 ];
 
 const blockOptions = [
-  { sessions: 5, label: "Taster Block", saving: "Save 5%", desc: "Dip your toes in — great for nurseries trying regular sessions for the first time." },
+  { sessions: 5, label: "Taster Block", saving: "Save 5%", desc: "Dip your toes in - great for nurseries trying regular sessions for the first time." },
   { sessions: 10, label: "Term Block", saving: "Save 10%", desc: "A full term's worth of sessions. Perfect for schools building rhythm into the curriculum." },
   { sessions: 20, label: "Full Year", saving: "Save 15%", desc: "Year-round rhythm. The best value option for settings that want Phil in regularly." },
 ];
@@ -141,7 +141,7 @@ export default function Pricing() {
         </div>
 
         <p className="text-center text-ink/50 font-body text-sm mt-8">
-          * Prices are indicative — travel beyond [X] miles may incur a small mileage supplement. Get in touch for an exact quote.
+          * Prices are indicative - travel beyond [X] miles may incur a small mileage supplement. Get in touch for an exact quote.
         </p>
       </section>
 
@@ -187,9 +187,9 @@ export default function Pricing() {
         <div className="space-y-4">
           {[
             { q: "Do I need to provide any equipment?", a: "Nope! Phil brings absolutely everything. All you need is a room and an excited group of kids." },
-            { q: "How far do you travel?", a: "Phil covers [X area / radius]. For venues outside this, get in touch — it may still be possible with a small travel supplement." },
+            { q: "How far do you travel?", a: "Phil covers [X area / radius]. For venues outside this, get in touch - it may still be possible with a small travel supplement." },
             { q: "Can I mix session types in a block booking?", a: "Absolutely. A block booking can include a mix of nursery, school, and club sessions." },
-            { q: "Is there a deposit required?", a: "Yes — a 25% deposit is required to secure your booking, with the balance due [X] days before the session." },
+            { q: "Is there a deposit required?", a: "Yes - a 25% deposit is required to secure your booking, with the balance due [X] days before the session." },
           ].map((item, i) => (
             <details
               key={i}

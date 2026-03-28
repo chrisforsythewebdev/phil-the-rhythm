@@ -67,7 +67,7 @@ export default function Home() {
               Bringing people together through rhythm & movement
             </p>
             <p className="text-white/80 text-base md:text-lg font-body mb-10 leading-relaxed max-w-lg">
-              Discover the power of rhythm with engaging, inclusive percussion workshops designed for all age groups. Our personalised programmes support wellbeing, teamwork, self-expression, cognitive function and brain health — no experience needed.
+              Discover the power of rhythm with engaging, inclusive percussion workshops designed for all age groups. Our personalised programmes support wellbeing, teamwork, self-expression, cognitive function and brain health - no experience needed.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -102,7 +102,7 @@ export default function Home() {
           <h2 className="font-display text-5xl text-rhythm-700 mb-4">What's Phil the Rhythm?</h2>
           <p className="text-ink/70 max-w-2xl mx-auto text-lg font-body">
             High-energy, hands-on percussion sessions designed for kids of all ages.
-            Think banging drums, shaking maracas, and big smiles — all with a musical purpose.
+            Think banging drums, shaking maracas, and big smiles - all with a musical purpose.
           </p>
         </div>
 
@@ -117,7 +117,7 @@ export default function Home() {
             {
               emoji: "🧒",
               title: "Built for Little Ones",
-              desc: "Sessions are tailored to age groups — from toddlers to primary school kids. Even the shy ones end up joining in.",
+              desc: "Sessions are tailored to age groups - from toddlers to primary school kids. Even the shy ones end up joining in.",
               color: "from-rhythm-500 to-rhythm-700",
             },
             {
@@ -181,7 +181,7 @@ export default function Home() {
             <span className="text-rhythm-500 squiggle">beat?</span>
           </h2>
           <p className="text-ink/60 text-lg mb-8 font-body">
-            Spaces fill up fast — especially around school term time and party season.
+            Spaces fill up fast - especially around school term time and party season.
           </p>
           <Link
             to="/contact"

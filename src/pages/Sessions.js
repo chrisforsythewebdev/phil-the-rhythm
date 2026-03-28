@@ -19,7 +19,7 @@ const sessions = [
     age: "Ages 4–18",
     tagline: "The whole class, banging together",
     colour: "from-rhythm-600 to-sky-500",
-    desc: "Tailored percussion workshops for primary and secondary school classes. Phil works with teachers to build on what students are already learning — or delivers a high-energy enrichment session.",
+    desc: "Tailored percussion workshops for primary and secondary school classes. Phil works with teachers to build on what students are already learning - or delivers a high-energy enrichment session.",
     highlights: ["Flexible session lengths", "Full class sizes", "Curriculum links available", "Assembly sessions too"],
   },
   {
@@ -29,7 +29,7 @@ const sessions = [
     age: "Ages 4–12",
     tagline: "End the day on a high",
     colour: "from-sky-500 to-rhythm-500",
-    desc: "Perfect for after-school clubs, holiday clubs, and breakfast clubs. High-energy and structured to work even with mixed age groups — everyone finds their level.",
+    desc: "Perfect for after-school clubs, holiday clubs, and breakfast clubs. High-energy and structured to work even with mixed age groups - everyone finds their level.",
     highlights: ["Flexible timings", "Mixed age groups welcome", "Works in small or large spaces", "Regular slots available"],
   },
   {
@@ -49,7 +49,7 @@ const sessions = [
     age: "Adults",
     tagline: "Team building with a beat",
     colour: "from-sky-600 to-rhythm-600",
-    desc: "Unique team-building workshops for corporate organisations. Drumming together builds communication, breaks down barriers, and leaves teams energised — an unforgettable alternative to the usual away-day activity.",
+    desc: "Unique team-building workshops for corporate organisations. Drumming together builds communication, breaks down barriers, and leaves teams energised - an unforgettable alternative to the usual away-day activity.",
     highlights: ["Half & full day options", "Any group size", "No experience needed", "Memorable & energising"],
   },
   {
@@ -59,7 +59,7 @@ const sessions = [
     age: "Any age!",
     tagline: "The party they'll never forget",
     colour: "from-yellow-400 to-rhythm-500",
-    desc: "Make it a birthday bash they'll still be talking about at their next one. Phil runs a full percussion party experience — games, group rhythms, and a proper finale moment.",
+    desc: "Make it a birthday bash they'll still be talking about at their next one. Phil runs a full percussion party experience - games, group rhythms, and a proper finale moment.",
     highlights: ["1–1.5 hour sessions", "Up to 25 kids", "Party games built in", "Home or venue"],
   },
 ];
@@ -171,14 +171,14 @@ export default function Sessions() {
           <h2 className="font-display text-5xl text-white mb-4">
             What does a session look like?
           </h2>
-          <p className="text-white/60 font-body mb-12">From arrival to finale — here's the shape of every Phil the Rhythm workshop.</p>
+          <p className="text-white/60 font-body mb-12">From arrival to finale - here's the shape of every Phil the Rhythm workshop.</p>
 
           <div className="flex flex-col gap-0">
             {[
               { step: "01", emoji: "🚐", title: "Arrival & Setup", desc: "Phil arrives early, sets up all the kit, and gets the space ready. No fuss, no stress for you." },
               { step: "02", emoji: "🪘", title: "Instrument Introduction", desc: "Participants are introduced to a variety of percussion instruments, along with their history and a live demonstration." },
               { step: "03", emoji: "🎵", title: "Interactive Activities", desc: "Immersive, music-based activities that support brain development, teamwork, and self-expression. Energetic, engaging, and inclusive." },
-              { step: "04", emoji: "🥁", title: "The Play-Along Finale", desc: "Every workshop concludes with a group drumming and percussion play-along using congas, bongos, and timbales — participants play together to develop rhythm, coordination, and a shared sense of achievement." },
+              { step: "04", emoji: "🥁", title: "The Play-Along Finale", desc: "Every workshop concludes with a group drumming and percussion play-along using congas, bongos, and timbales - participants play together to develop rhythm, coordination, and a shared sense of achievement." },
             ].map((item, i) => (
               <div key={i} className="flex gap-6 items-start group relative">
                 <div className="flex flex-col items-center">

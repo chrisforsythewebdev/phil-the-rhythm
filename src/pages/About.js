@@ -77,7 +77,7 @@ export default function About() {
               {
                 emoji: "🧠",
                 title: "Supports brain health & development",
-                desc: "Rhythm-based activity supports cognitive function, motor skills, and brain development — for kids and adults alike.",
+                desc: "Rhythm-based activity supports cognitive function, motor skills, and brain development - for kids and adults alike.",
               },
               {
                 emoji: "🤝",
@@ -87,12 +87,12 @@ export default function About() {
               {
                 emoji: "🛠️",
                 title: "All instruments provided",
-                desc: "Phil brings everything — congas, bongos, timbales, shakers, and more. You just open the door.",
+                desc: "Phil brings everything - congas, bongos, timbales, shakers, and more. You just open the door.",
               },
               {
                 emoji: "⏱️",
                 title: "Tailored to your group",
-                desc: "Every session — whether 30 minutes or a full hour — is carefully shaped to suit the needs and energy of your group.",
+                desc: "Every session - whether 30 minutes or a full hour - is carefully shaped to suit the needs and energy of your group.",
               },
               {
                 emoji: "🎓",
