@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png";
+import logo from "../assets/logo3.png";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -47,15 +47,15 @@ export default function Footer() {
               <a href="mailto:phil@philtherhythm.co.uk" className="hover:text-ocean-300 transition-colors">
                 📧 phil@philtherhythm.co.uk
               </a>
-              <a href="tel:+447700000000" className="hover:text-ocean-300 transition-colors">
-                📞 07700 000 000
+              <a href="tel:+447834767124" className="hover:text-ocean-300 transition-colors">
+                📞 07834 767124
               </a>
             </div>
             <div className="flex gap-3 mt-4">
               {["Instagram", "Facebook", "TikTok"].map((s) => (
                 <a
                   key={s}
-                  href="https://instagram.com" target="_blank" rel="noreferrer"
+                  href="https://www.instagram.com/phil.the.rhythm?igsh=MTdseHJuajZkczlwMw==" target="_blank" rel="noreferrer"
                   className="text-xs px-3 py-1 rounded-full border border-white/20 text-white/60 hover:border-ocean-400 hover:text-ocean-300 transition-all"
                 >
                   {s}
