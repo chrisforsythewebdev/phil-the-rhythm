@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 const packages = [
@@ -59,12 +59,10 @@ const blockOptions = [
 ];
 
 export default function Pricing() {
-  const [annual, setAnnual] = useState(false);
-
   return (
     <div className="overflow-x-hidden pt-20">
       {/* ── HEADER ── */}
-      <section className="relative bg-gradient-to-br from-rhythm-700 to-sky-500 py-24 px-4 text-center overflow-hidden">
+      <section className="relative bg-gradient-to-br from-ocean-900 to-ocean-500 py-24 px-4 text-center overflow-hidden">
         <div className="absolute top-4 right-8 text-6xl opacity-20 animate-float">💰</div>
         <div className="absolute bottom-4 left-8 text-5xl opacity-20 animate-wiggle">🎵</div>
         <div className="relative z-10">
@@ -75,26 +73,26 @@ export default function Pricing() {
         </div>
         <div className="absolute bottom-0 left-0 right-0">
           <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#fdfbf7" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" />
+            <path fill="#faf4ec" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" />
           </svg>
         </div>
       </section>
 
       {/* ── PACKAGES ── */}
       <section className="py-20 px-4 max-w-6xl mx-auto">
-        <h2 className="font-display text-5xl text-rhythm-700 text-center mb-12">Session Packages</h2>
+        <h2 className="font-display text-5xl text-ocean-700 text-center mb-12">Session Packages</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
           {packages.map((pkg) => (
             <div
               key={pkg.id}
               className={`relative rounded-3xl overflow-hidden transition-all duration-300 hover:-translate-y-2 ${
                 pkg.highlight
-                  ? "bg-gradient-to-b from-rhythm-600 to-rhythm-800 text-white shadow-2xl scale-105 ring-4 ring-rhythm-300"
-                  : "bg-white shadow-lg border border-rhythm-100 text-ink"
+                  ? "bg-gradient-to-b from-ocean-700 to-ocean-900 text-white shadow-2xl scale-105 ring-4 ring-ocean-300"
+                  : "bg-white shadow-lg border border-ocean-100 text-ink"
               }`}
             >
               {pkg.badge && (
-                <div className="absolute top-0 left-0 right-0 bg-yellow-400 text-ink text-xs font-bold text-center py-1.5 tracking-widest uppercase">
+                <div className="absolute top-0 left-0 right-0 bg-brown-400 text-white text-xs font-bold text-center py-1.5 tracking-widest uppercase">
                   {pkg.badge}
                 </div>
               )}
@@ -104,7 +102,7 @@ export default function Pricing() {
                   {pkg.name}
                 </h3>
                 <div className="mb-6">
-                  <span className={`font-display text-5xl ${pkg.highlight ? "text-yellow-300" : "text-rhythm-600"}`}>
+                  <span className={`font-display text-5xl ${pkg.highlight ? "text-brown-300" : "text-ocean-500"}`}>
                     {pkg.price}
                   </span>
                   <span className={`text-sm ml-2 ${pkg.highlight ? "text-white/60" : "text-ink/50"}`}>
@@ -114,11 +112,7 @@ export default function Pricing() {
                 <ul className="space-y-3 mb-8">
                   {pkg.features.map((f) => (
                     <li key={f} className="flex items-center gap-3 text-sm font-body">
-                      <span
-                        className={`w-5 h-5 rounded-full flex items-center justify-center text-xs flex-shrink-0 ${
-                          pkg.highlight ? "bg-white/20 text-white" : "bg-rhythm-100 text-rhythm-600"
-                        }`}
-                      >
+                      <span className={`w-5 h-5 rounded-full flex items-center justify-center text-xs flex-shrink-0 ${pkg.highlight ? "bg-white/20 text-white" : "bg-ocean-100 text-ocean-600"}`}>
                         ✓
                       </span>
                       <span className={pkg.highlight ? "text-white/80" : "text-ink/70"}>{f}</span>
@@ -129,8 +123,8 @@ export default function Pricing() {
                   to="/contact"
                   className={`block text-center font-display text-lg py-3 rounded-full transition-all hover:scale-105 ${
                     pkg.highlight
-                      ? "bg-yellow-400 text-ink hover:bg-yellow-300"
-                      : "bg-rhythm-500 text-white hover:bg-rhythm-600"
+                      ? "bg-brown-400 text-white hover:bg-brown-300"
+                      : "bg-ocean-500 text-white hover:bg-ocean-600"
                   }`}
                 >
                   {pkg.cta}
@@ -146,11 +140,11 @@ export default function Pricing() {
       </section>
 
       {/* ── BLOCK BOOKINGS ── */}
-      <section className="bg-rhythm-50 py-20 px-4 relative overflow-hidden">
-        <div className="absolute -top-16 -right-16 w-64 h-64 bg-rhythm-100 blob opacity-60" />
+      <section className="bg-ocean-50 py-20 px-4 relative overflow-hidden">
+        <div className="absolute -top-16 -right-16 w-64 h-64 bg-ocean-100 blob opacity-60" />
         <div className="max-w-5xl mx-auto relative z-10">
           <div className="text-center mb-12">
-            <h2 className="font-display text-5xl text-rhythm-700 mb-4">Block Bookings</h2>
+            <h2 className="font-display text-5xl text-ocean-700 mb-4">Block Bookings</h2>
             <p className="font-body text-ink/60 max-w-xl mx-auto">
               Commit to a block of sessions and save. Perfect for schools, nurseries, and clubs that want Phil to become part of their regular rhythm. 🥁
             </p>
@@ -159,11 +153,11 @@ export default function Pricing() {
             {blockOptions.map((block) => (
               <div
                 key={block.sessions}
-                className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 border-2 border-transparent hover:border-rhythm-200"
+                className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 border-2 border-transparent hover:border-ocean-200"
               >
                 <div className="flex items-center justify-between mb-4">
-                  <span className="font-display text-5xl text-rhythm-500">{block.sessions}</span>
-                  <span className="bg-rhythm-100 text-rhythm-700 font-bold text-sm px-3 py-1 rounded-full">
+                  <span className="font-display text-5xl text-ocean-500">{block.sessions}</span>
+                  <span className="bg-ocean-100 text-ocean-700 font-bold text-sm px-3 py-1 rounded-full">
                     {block.saving}
                   </span>
                 </div>
@@ -171,7 +165,7 @@ export default function Pricing() {
                 <p className="font-body text-ink/60 text-sm leading-relaxed mb-6">{block.desc}</p>
                 <Link
                   to="/contact"
-                  className="block text-center border-2 border-rhythm-500 text-rhythm-600 hover:bg-rhythm-500 hover:text-white font-display text-lg py-2 rounded-full transition-all"
+                  className="block text-center border-2 border-ocean-500 text-ocean-600 hover:bg-ocean-500 hover:text-white font-display text-lg py-2 rounded-full transition-all"
                 >
                   Enquire
                 </Link>
@@ -186,18 +180,18 @@ export default function Pricing() {
         <h2 className="font-display text-4xl text-ink text-center mb-10">Quick questions</h2>
         <div className="space-y-4">
           {[
-            { q: "Do I need to provide any equipment?", a: "Nope! Phil brings absolutely everything. All you need is a room and an excited group of kids." },
+            { q: "Do I need to provide any equipment?", a: "Nope! Phil brings absolutely everything. All you need is a room and an excited group of participants." },
             { q: "How far do you travel?", a: "Phil covers [X area / radius]. For venues outside this, get in touch - it may still be possible with a small travel supplement." },
             { q: "Can I mix session types in a block booking?", a: "Absolutely. A block booking can include a mix of nursery, school, and club sessions." },
             { q: "Is there a deposit required?", a: "Yes - a 25% deposit is required to secure your booking, with the balance due [X] days before the session." },
           ].map((item, i) => (
             <details
               key={i}
-              className="group bg-white rounded-2xl px-6 py-5 shadow-sm border border-rhythm-100 open:border-rhythm-300 transition-all"
+              className="group bg-white rounded-2xl px-6 py-5 shadow-sm border border-ocean-100 open:border-ocean-300 transition-all"
             >
               <summary className="font-display text-lg text-ink cursor-pointer list-none flex items-center justify-between">
                 {item.q}
-                <span className="text-rhythm-500 group-open:rotate-45 transition-transform duration-200 font-bold text-2xl">+</span>
+                <span className="text-ocean-500 group-open:rotate-45 transition-transform duration-200 font-bold text-2xl">+</span>
               </summary>
               <p className="font-body text-ink/60 text-sm mt-3 leading-relaxed">{item.a}</p>
             </details>
@@ -208,7 +202,7 @@ export default function Pricing() {
           <p className="font-body text-ink/50 mb-4">Still got questions?</p>
           <Link
             to="/contact"
-            className="inline-block bg-rhythm-500 hover:bg-rhythm-600 text-white font-display text-xl px-8 py-4 rounded-full transition-all hover:scale-105"
+            className="inline-block bg-ocean-500 hover:bg-ocean-600 text-white font-display text-xl px-8 py-4 rounded-full transition-all hover:scale-105"
           >
             Get in Touch 📩
           </Link>

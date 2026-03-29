@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-3">
               <img src={logo} alt="Phil the Rhythm" className="h-10 w-10 object-contain" />
-              <span className="font-display text-2xl text-rhythm-300">Phil the Rhythm</span>
+              <span className="font-display text-2xl text-ocean-300">Phil the Rhythm</span>
             </div>
             <p className="text-white/60 text-sm leading-relaxed">
               Bringing the beat to nurseries, schools, and celebrations across the area.
@@ -20,7 +20,7 @@ export default function Footer() {
 
           {/* Quick links */}
           <div>
-            <h4 className="font-display text-lg text-rhythm-300 mb-4">Quick Links</h4>
+            <h4 className="font-display text-lg text-ocean-300 mb-4">Quick Links</h4>
             <div className="flex flex-col gap-2">
               {[
                 { to: "/", label: "Home" },
@@ -32,7 +32,7 @@ export default function Footer() {
                 <Link
                   key={l.to}
                   to={l.to}
-                  className="text-white/60 hover:text-rhythm-300 transition-colors text-sm"
+                  className="text-white/60 hover:text-ocean-300 transition-colors text-sm"
                 >
                   {l.label}
                 </Link>
@@ -42,12 +42,12 @@ export default function Footer() {
 
           {/* Socials / contact */}
           <div>
-            <h4 className="font-display text-lg text-rhythm-300 mb-4">Get in Touch</h4>
+            <h4 className="font-display text-lg text-ocean-300 mb-4">Get in Touch</h4>
             <div className="flex flex-col gap-2 text-sm text-white/60">
-              <a href="mailto:phil@philtherhythm.co.uk" className="hover:text-rhythm-300 transition-colors">
+              <a href="mailto:phil@philtherhythm.co.uk" className="hover:text-ocean-300 transition-colors">
                 📧 phil@philtherhythm.co.uk
               </a>
-              <a href="tel:+447700000000" className="hover:text-rhythm-300 transition-colors">
+              <a href="tel:+447700000000" className="hover:text-ocean-300 transition-colors">
                 📞 07700 000 000
               </a>
             </div>
@@ -55,8 +55,8 @@ export default function Footer() {
               {["Instagram", "Facebook", "TikTok"].map((s) => (
                 <a
                   key={s}
-                  href="#"
-                  className="text-xs px-3 py-1 rounded-full border border-white/20 text-white/60 hover:border-rhythm-400 hover:text-rhythm-300 transition-all"
+                  href="https://instagram.com" target="_blank" rel="noreferrer"
+                  className="text-xs px-3 py-1 rounded-full border border-white/20 text-white/60 hover:border-ocean-400 hover:text-ocean-300 transition-all"
                 >
                   {s}
                 </a>
