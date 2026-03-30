@@ -9,7 +9,7 @@ const sessions = [
     title: "Nurseries",
     age: "Ages 1–4",
     tagline: "Tiny hands, big beats",
-    colour: "from-ocean-400 to-ocean-600",
+    colour: "from-sky-400 to-rhythm-500",
     desc: "Gentle, sensory-led percussion sessions for the very littlest music lovers. Lots of call-and-response, shakers, and simple rhythms that build listening skills while being completely joyful.",
     highlights: ["20–30 min sessions", "Up to 20 children", "Sensory instruments included", "Carer participation encouraged"],
   },
@@ -19,7 +19,7 @@ const sessions = [
     title: "Primary & Secondary Schools",
     age: "Ages 4–18",
     tagline: "The whole class, banging together",
-    colour: "from-ocean-900 to-ocean-500",
+    colour: "from-sky-500 to-rhythm-700",
     desc: "Tailored percussion workshops for primary and secondary school classes. Phil works with teachers to build on what students are already learning — or delivers a high-energy enrichment session.",
     highlights: ["Flexible session lengths", "Full class sizes", "Curriculum links available", "Assembly sessions too"],
   },
@@ -29,7 +29,7 @@ const sessions = [
     title: "Children's Clubs",
     age: "Ages 4–12",
     tagline: "End the day on a high",
-    colour: "from-ocean-500 to-ocean-700",
+    colour: "from-sky-500 to-rhythm-500",
     desc: "Perfect for after-school clubs, holiday clubs, and breakfast clubs. High-energy and structured to work even with mixed age groups — everyone finds their level.",
     highlights: ["Flexible timings", "Mixed age groups welcome", "Works in small or large spaces", "Regular slots available"],
   },
@@ -39,7 +39,7 @@ const sessions = [
     title: "Care Facilities & Charities",
     age: "All ages",
     tagline: "Rhythm for health & wellbeing",
-    colour: "from-ocean-800 to-ocean-500",
+    colour: "from-rhythm-500 to-sky-400",
     desc: "Specialist sessions for care facilities, disability support groups, and charities. Music-based activity supports cognitive function, brain health, and emotional wellbeing in a safe, inclusive environment.",
     highlights: ["Adapted for all abilities", "Supports brain health", "Disability groups welcome", "Charity partnerships available"],
   },
@@ -49,7 +49,7 @@ const sessions = [
     title: "Corporate",
     age: "Adults",
     tagline: "Team building with a beat",
-    colour: "from-brown-700 to-brown-500",
+    colour: "from-sky-600 to-rhythm-600",
     desc: "Unique team-building workshops for corporate organisations. Drumming together builds communication, breaks down barriers, and leaves teams energised — an unforgettable alternative to the usual away-day activity.",
     highlights: ["Half & full day options", "Any group size", "No experience needed", "Memorable & energising"],
   },
@@ -59,7 +59,7 @@ const sessions = [
     title: "Birthday Parties",
     age: "Any age!",
     tagline: "The party they'll never forget",
-    colour: "from-brown-400 to-brown-600",
+    colour: "from-yellow-400 to-rhythm-500",
     desc: "Make it a birthday bash they'll still be talking about at their next one. Phil runs a full percussion party experience — games, group rhythms, and a proper finale moment.",
     highlights: ["1–1.5 hour sessions", "Up to 25 kids", "Party games built in", "Home or venue"],
   },
@@ -80,7 +80,7 @@ export default function Sessions() {
 
       <div className="overflow-x-hidden pt-20">
       {/* ── HEADER ── */}
-      <section className="relative bg-gradient-to-br from-ocean-900 to-ocean-500 py-24 px-4 text-center overflow-hidden">
+      <section className="relative bg-gradient-to-br from-sky-500 to-rhythm-700 py-24 px-4 text-center overflow-hidden">
         <div className="absolute top-4 left-8 text-5xl opacity-20 animate-float">🪘</div>
         <div className="absolute top-8 right-12 text-6xl opacity-20 animate-bounce2">🎵</div>
         <div className="absolute bottom-8 left-1/3 text-4xl opacity-20 animate-wiggle">🎉</div>
@@ -92,7 +92,7 @@ export default function Sessions() {
         </div>
         <div className="absolute bottom-0 left-0 right-0">
           <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#faf4ec" d="M0,20 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" />
+            <path fill="#fdfbf7" d="M0,20 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" />
           </svg>
         </div>
       </section>
@@ -119,8 +119,8 @@ export default function Sessions() {
               onClick={() => setActive(s.id)}
               className={`font-display text-lg px-5 py-2 rounded-full transition-all duration-200 ${
                 active === s.id
-                  ? "bg-ocean-500 text-white shadow-lg scale-105"
-                  : "bg-white text-ink/60 border-2 border-ocean-100 hover:border-ocean-300"
+                  ? "bg-rhythm-500 text-white shadow-lg scale-105"
+                  : "bg-white text-ink/60 border-2 border-rhythm-100 hover:border-rhythm-300"
               }`}
             >
               {s.emoji} {s.title}
@@ -144,21 +144,21 @@ export default function Sessions() {
             <h3 className="font-display text-3xl text-ink mb-6">What's included:</h3>
             <div className="space-y-4">
               {session.highlights.map((h) => (
-                <div key={h} className="flex items-center gap-4 bg-white rounded-2xl px-6 py-4 shadow-sm border border-ocean-100">
-                  <span className="w-8 h-8 bg-ocean-500 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">✓</span>
+                <div key={h} className="flex items-center gap-4 bg-white rounded-2xl px-6 py-4 shadow-sm border border-rhythm-100">
+                  <span className="w-8 h-8 bg-rhythm-500 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">✓</span>
                   <span className="font-body text-ink/80">{h}</span>
                 </div>
               ))}
             </div>
 
-            <div className="mt-8 bg-ocean-50 rounded-3xl p-6 border-2 border-dashed border-ocean-200">
-              <p className="font-display text-ocean-700 text-xl mb-2">Interested in this session?</p>
+            <div className="mt-8 bg-rhythm-50 rounded-3xl p-6 border-2 border-dashed border-rhythm-200">
+              <p className="font-display text-rhythm-700 text-xl mb-2">Interested in this session?</p>
               <p className="font-body text-ink/60 text-sm mb-4">
                 Get in touch and Phil will get back to you within 24 hours.
               </p>
               <Link
                 to="/contact"
-                className="inline-block bg-ocean-500 hover:bg-ocean-600 text-white font-display text-lg px-6 py-3 rounded-full transition-all hover:scale-105"
+                className="inline-block bg-rhythm-500 hover:bg-rhythm-600 text-white font-display text-lg px-6 py-3 rounded-full transition-all hover:scale-105"
               >
                 Book {session.title} 🥁
               </Link>
@@ -184,10 +184,10 @@ export default function Sessions() {
             ].map((item, i) => (
               <div key={i} className="flex gap-6 items-start group relative">
                 <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 bg-ocean-500 rounded-full flex items-center justify-center text-white font-display text-lg flex-shrink-0 group-hover:bg-ocean-400 transition-colors">
+                  <div className="w-12 h-12 bg-rhythm-500 rounded-full flex items-center justify-center text-white font-display text-lg flex-shrink-0 group-hover:bg-rhythm-400 transition-colors">
                     {item.step}
                   </div>
-                  {i < 3 && <div className="w-0.5 h-12 bg-ocean-800" />}
+                  {i < 3 && <div className="w-0.5 h-12 bg-rhythm-700" />}
                 </div>
                 <div className="pb-8 text-left">
                   <div className="flex items-center gap-3 mb-1">
