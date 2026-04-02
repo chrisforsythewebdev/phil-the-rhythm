@@ -192,8 +192,8 @@ export default function Contact() {
             <div className="bg-rhythm-50 rounded-3xl p-6 border-2 border-dashed border-rhythm-200">
               <h3 className="font-display text-2xl text-rhythm-700 mb-4">Or reach Phil directly</h3>
               <div className="space-y-3">
-                <a href="mailto:phil@philtherhythm.co.uk" className="flex items-center gap-3 text-ink/70 hover:text-rhythm-600 transition-colors font-body text-sm">
-                  <span className="text-2xl">📧</span><span>phil@philtherhythm.co.uk</span>
+                <a href="mailto:philtherhythm@outlook.com" className="flex items-center gap-3 text-ink/70 hover:text-rhythm-600 transition-colors font-body text-sm">
+                  <span className="text-2xl">📧</span><span>philtherhythm@outlook.com</span>
                 </a>
                 <a href="tel:+447834767124" className="flex items-center gap-3 text-ink/70 hover:text-rhythm-600 transition-colors font-body text-sm">
                   <span className="text-2xl">📞</span><span>07834 767124</span>
