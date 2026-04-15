@@ -44,8 +44,8 @@ export default function Footer() {
           <div>
             <h4 className="font-display text-lg text-ocean-300 mb-4">Get in Touch</h4>
             <div className="flex flex-col gap-2 text-sm text-white/60">
-              <a href="mailto:phil@philtherhythm.co.uk" className="hover:text-ocean-300 transition-colors">
-                📧 phil@philtherhythm.co.uk
+              <a href="mailto:philtherhythmdrums@outlook.com" className="hover:text-ocean-300 transition-colors">
+                📧 philtherhythmdrums@outlook.com
               </a>
               <a href="tel:+447834767124" className="hover:text-ocean-300 transition-colors">
                 📞 07834 767124
